@@ -1,0 +1,1 @@
+function foo(x: int): int {  return x + 1; }  function bar(x: int): int {  var intermediate: int = foo(x);  return intermediate * 2; }  function main(): void {  var x = 5;  var y = bar(x);  echo y; // This will output 12 as expected }
